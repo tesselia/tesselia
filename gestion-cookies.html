@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestion des cookies - TESSELIA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon multi-tailles -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #0b3041;
+      color: #ebe0d6;
+      margin: 2rem;
+      line-height: 1.8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .corner-logo {
+      width: 120px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #f0c674;
+      margin-bottom: 1rem;
+    }
+
+    p, ul {
+      max-width: 700px;
+      margin-bottom: 1.5rem;
+    }
+
+    strong {
+      color: #f0c674;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+
+    button {
+      background-color: #f0c674;
+      border: none;
+      color: #0b3041;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d5a55a;
+    }
+
+    footer {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body class="gestion-cookies-page">
+  <header>
+    <a href="index.html">
+    </a>
+    <h1>Gestion des cookies</h1>
+  </header>
+
+  <p>Vous pouvez ici modifier vos préférences concernant l'utilisation des cookies sur le site <strong>TESSELIA</strong>.</p>
+
+  <p><strong>Cookies strictement nécessaires :</strong><br>
+    Ces cookies sont indispensables au bon fonctionnement du site et ne peuvent pas être désactivés.
+  </p>
+
+  <p><strong>Cookies optionnels :</strong><br>
+    Vous pouvez choisir d’activer ou non ces cookies :
+  </p>
+  <ul>
+    <li>Statistiques de visite (ex : Google Analytics)</li>
+    <li>Contenu externe (ex : vidéos YouTube)</li>
+  </ul>
+
+  <div class="button-group">
+    <button onclick="localStorage.setItem('cookiesAccepted', 'true'); alert('Cookies acceptés. Recharger la page pour appliquer les changements.')">Accepter tous les cookies</button>
+    <button onclick="localStorage.setItem('cookiesAccepted', 'false'); alert('Cookies refusés. Recharger la page pour appliquer les changements.')">Refuser les cookies optionnels</button>
+  </div>
+
+  <footer>
+    <a href="index.html">
+      <img src="images/logo_tesselia.png" alt="Logo Tesselia" class="corner-logo">
+    </a>
+  </footer>
+
+</body>
+</html>

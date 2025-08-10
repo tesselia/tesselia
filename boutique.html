@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique – Tesselia</title>
+      <!-- Favicon multi-tailles -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
+  <style>
+    body {
+      background-color: #002b3d;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+    .produits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .produit {
+      width: 280px;
+      background-color: #003a50;
+      border: 1px solid #d5a55a;
+      border-radius: 12px;
+      padding: 15px;
+    }
+    .produit img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .btn {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #d5a55a;
+      color: #001f2f;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(255,215,0,0.4);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #e6c200;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Boutique Tesselia</h1>
+  <p>Objets imprimés en 3D, biosourcés et faits avec passion.</p>
+
+  <div class="produits">
+
+    <div class="produit">
+      <img src="images/cao2.png" alt="Coque Samsung S24">
+      <h3>Coque Samsung S24</h3>
+      <p>18 €</p>
+      <a href="https://tipeee.com/commande-coque-s24" class="btn" target="_blank">Acheter</a>
+    </div>
+
+    <div class="produit">
+      <img src="images/support_rpi.png" alt="Support Raspberry Pi">
+      <h3>Support Raspberry Pi</h3>
+      <p>12 €</p>
+      <a href="https://tipeee.com/commande-support-rpi" class="btn" target="_blank">Acheter</a>
+    </div>
+
+    
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+  border: 2px solid #f0c674;
+  margin: 1rem auto;
+display: block;
+
+Matériaux Biosourcés – Tesselia
+
+
+00000033
+
+
+A PROPOS : 
+Ton identité & ton parcours
+
+Ton prénom (si tu le veux)
+
+Depuis quand tu es dans l’impression 3D
+
+Freelance depuis 2019, début sur Fiverr
+
+Création de Tesselia : pourquoi, quand, pour qui
+
+La mission de Tesselia
+
+Ce que tu veux apporter à travers ce projet
+
+L’alliance impression 3D + écoresponsabilité
+
+Pour quels types de clients (startups, artisans, chercheurs, particuliers...)
+
+Tes valeurs
+
+Écoute, qualité, circularité, accessibilité technologique...
+
+Ton fonctionnement / ton approche
+
+Accompagnement sur-mesure
+
+Réactivité, prototypage rapide, co-conception...
+
+(Optionnel) Un portrait / une photo / ou une image stylisée
+
+Ou une signature manuscrite pour humaniser
+
+
+Forte de près de 5 ans d'expérience en freelance, notamment via la plateforme Fiverr, je développe Tesselia comme une continuité naturelle de mon expertise acquise sur le terrain auprès de clients variés en France et à l’international.

@@ -1,0 +1,1178 @@
+/* ======================================= */
+/*                FONTS                    */
+/* ======================================= */
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('polices/rubik/static/Rubik-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('polices/lato/Lato-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ======================================= */
+/*             RESET & BASE                */
+/* ======================================= */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b3041;
+  color: #ebe0d6;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ======================================= */
+/*            TYPOGRAPHY                  */
+/* ======================================= */
+h1, h3 {
+  font-family: 'Orbitron', serif;
+  font-weight: 700;
+  margin: 0;
+}
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 40px;
+  text-align: center;
+  color: #d5a55a;
+}
+
+
+/* ======================================= */
+/*               HEADER                   */
+/* ======================================= */
+header {
+  background-color: #0b3041;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+}
+.corner-logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  height: 100px;
+  z-index: 10;
+}
+.title-block .logo-tesselia {
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+/* ======================================= */
+/*              NAVIGATION                */
+/* ======================================= */
+.main-nav {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.main-nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.main-nav a {
+  font-family: 'Orbitron', serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #d5a55a;
+}
+.main-nav a:hover {
+  color: #ebe0d6;
+}
+
+/* ======================================= */
+/*               SECTIONS                 */
+/* ======================================= */
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#services,
+#contact {
+  scroll-margin-top: 120px;
+}
+
+/* Presentation Block */
+.presentation {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+.presentation strong {
+  color: #d5a55a;
+}
+
+/* ======================================= */
+/*           SERVICES SECTION             */
+/* ======================================= */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.service {
+  background-color: #0b3041;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 5px #d5a55a;
+  transition: transform 0.3s ease;
+}
+.service.clickable:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(240, 198, 116, 0.5);
+}
+.service-img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  display: block;
+  filter: invert(99%) sepia(52%) saturate(3463%) hue-rotate(308deg) brightness(108%) contrast(88%);
+}
+
+/* ======================================= */
+/*         SCHEMA TRANSFORMATION          */
+/* ======================================= */
+.schema-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.schema-title,
+.section-schema h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #d5a55a;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.schema-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.schema-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.schema-img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+.schema-block h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #d5a55a;
+  margin: 0;
+  padding: 8px 16px;
+  background-color: #0b3041;
+  border-radius: 10px;
+}
+.schema-lineaire {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: #d5a55a;
+}
+.etape-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 220px;
+}
+.etape {
+  background-color: #0b3041;
+  padding: 14px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  min-width: 180px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.fleche {
+  font-size: 50px;
+  color: #d5a55a;
+}
+.fleche-large {
+  font-size: 3rem;
+  color: #d5a55a;
+  user-select: none;
+  line-height: 1;
+}
+.ligne-etape,
+.schema-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.schema-arrow { font-size: 24px; color: #d5a55a; margin: 10px; }
+
+/* ======================================= */
+/*      IMAGE CARD & OVERLAY + SHADOW     */
+/* ======================================= */
+.image-container,
+.card-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 220px; 
+  aspect-ratio: 3/4;
+  border-radius: 8px;
+  /*border: 1px solid #d5a55a;*/
+  overflow: hidden;
+}
+
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 220px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+
+.card-hover .image-wrapper img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  padding: 10px;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 31, 47, 0.9);
+  color: #ebe0d6;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.image-wrapper:hover .overlay,
+.card-hover:hover .overlay {
+  opacity: 1;
+}
+
+
+/* ======================================= */
+/*       GRID CARD & HOVER EFFECTS        */
+/* ======================================= */
+
+.grid-hover,
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  
+}
+.card-hover {
+  background-color: #0b3041;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 5px #d5a55a;
+  transition: transform 0.3s ease; 
+}
+.card-hover:hover {
+  box-shadow: 0 0 25px rgba(240, 198, 116, 0.5);
+  transform: scale(1.05);
+}
+.btn-container {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.card-hover:hover .btn-container {
+  opacity: 1;
+  pointer-events: auto;
+}
+.btn-acheter {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #d5a55a;
+  color: #0b3041;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btn-acheter:hover {
+  background-color: #d5a55a;
+}
+
+
+/* ======================================= */
+/*     MACHINES ET MATIERES    */
+/* ======================================= */
+
+
+.image-container,
+.plastique-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 220px; 
+  aspect-ratio: 3/4;
+  border-radius: 8px;
+  /*border: 1px solid #d5a55a;*/
+  overflow: hidden;
+}
+
+
+.plastique-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 220px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+
+.card-hover .image-wrapper img,
+.schema-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 50%; */
+  padding: 10px;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 31, 47, 0.9);
+  color: #ebe0d6;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.image-wrapper:hover .overlay,
+.card-hover:hover .overlay {
+  opacity: 1;
+}
+
+/* ======================================= */
+/*      IMAGE CARD VISITE    */
+/* ======================================= */
+
+.galerie-cartes {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.galerie-cartes h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d5a55a;
+  text-align: center;
+}
+
+.galerie-cartes p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+.cartes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+/* carte partagée */
+.card {
+  background-color: #0b3041;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px #d5a55a;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 25px rgba(240, 198, 116, 0.6);
+}
+
+/* variante horizontale */
+.carte-horizontal {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto;
+  
+}
+
+
+/* overlay animé */
+.card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 31, 47, 0.95);
+  color: #ebe0d6;
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.description {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* bouton */
+.btn-acheter {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #d5a55a;
+  color: #0b3041;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.8rem;
+  align-self: flex-start;
+  transition: filter 0.2s ease;
+}
+
+.btn-acheter:hover {
+  filter: brightness(1.1);
+}
+
+
+/* ======================================= */
+/*         NOS MACHINES SECTION           */
+/* ======================================= */
+.section-machines {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-machines .section-title {
+  color: #d5a55a;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
+}
+
+.section-machines .section-subtitle {
+  color: #ebe0d6;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Grille des machines */
+.machines-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+
+.machine-card {
+  width: 220px;
+  aspect-ratio: 3/4;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 0 5px #d5a55a;
+  transition: transform 0.3s ease;
+}
+.machine-card:hover {
+  background-color: #0b3041;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 5px #d5a55a;
+  transition: transform 0.3s ease;
+}
+
+
+
+.machine-img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.machine-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+
+.machine-name {
+  margin-top: 10px;
+  font-family: 'Rubik', sans-serif;
+  color: #d5a55a;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.services-cards .card {
+  width: 260px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #d5a55a;
+  border-radius: 8px;
+  background-color: #0b3041;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(240, 198, 116, 0.3);
+}
+
+
+.services-cards .break-line {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* ======================================= */
+/*           CONTACT / FORM STYLES        */
+/* ======================================= */
+#contact {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #d5a55a;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d5a55a;
+  border-radius: 5px;
+  background-color: #ebe0d6;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+form button {
+  display: block;
+  margin: 1.5rem auto 0;
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+  color: #d5a55a;
+  font-weight: bold;
+  border: 2px solid #d5a55a;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Orbitron', serif;
+  transition: background-color 0.3s ease;
+}
+form button:hover {
+  background-color: #b58647;
+}
+
+/* ======================================= */
+/*               FOOTER                   */
+/* ======================================= */
+footer {
+  background-color: #0b3041;
+  color: #ebe0d6;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-links a {
+  color: #ebe0d6;
+  font-weight: 500;
+}
+.footer-links a:hover {
+  color: #d5a55a;
+}
+
+/* ======================================= */
+/*               UTILITIES                */
+/* ======================================= */
+#services, #contact {
+  scroll-margin-top: 120px;
+}
+@media (max-width: 768px) {
+  .schema-lineaire,
+  .ligne-etape {
+    flex-direction: column;
+  }
+  .fleche-large {
+    transform: rotate(90deg);
+    margin: 1rem 0;
+  }
+}
+
+
+/* renvoie page de contact */
+.buton {
+  display: inline-block;
+  margin: 1.5rem auto 0;
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+  color: #d5a55a;
+  font-weight: bold;
+  border: 2px solid #d5a55a;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ea
+  se;
+  font-family: 'Orbitron', serif;
+}
+
+.buton:hover {
+  background-color: #b58647;
+}
+
+
+/* carousel*/
+.avis-slide {
+  background-color: rgba(213, 165, 90, 0.1);
+  padding: 2rem;
+  margin: auto;
+  max-width: 600px;
+  border-radius: 8px;
+  border: 1px solid #d5a55a;
+  text-align: center;
+  font-style: italic;
+  color: #ebe0d6;
+  box-shadow: 0 0 10px rgba(240, 198, 116, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.avis-slide a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #d5a55a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.slide:hover .avis-slide {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(240, 198, 116, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.avis-slide a:hover {
+  color: #fff;
+  
+
+}
+.avis-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: rgba(213, 165, 90, 0.08);
+  border: 1px solid #d5a55a;
+  border-radius: 12px;
+  text-align: center;
+  color: #ebe0d6;
+  font-style: italic;
+  box-shadow: 0 0 10px rgba(240, 198, 116, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.avis-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(240, 198, 116, 0.4);
+}
+
+.avis-texte {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.avis-nom {
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+.avis-nom .pays {
+  font-size: 0.9rem;
+  color: #d5a55a;
+}
+
+.avis-note {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #d5a55a;
+}
+.stars {
+  letter-spacing: 2px;
+  color: #f7d164;
+  font-size: 1.1rem;
+}
+.date {
+  margin-left: 0.8rem;
+  color: #ebe0d6;
+}
+
+
+
+.carousel-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.carousel-controls button {
+  background-color: transparent;
+  border: 1px solid #d5a55a;
+  color: #d5a55a;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.carousel-controls button:hover {
+  background-color: #d5a55a;
+  color: #0b3041;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: #d5a55a;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.dot.active {
+  opacity: 1;
+}
+
+.button-class {
+  display: inline-block; 
+  margin: 1.5rem auto 0;
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+  color: #d5a55a;
+  font-weight: bold;
+  border: 2px solid #d5a55a;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; 
+  text-align: center;
+  font-family: 'Orbitron', serif;
+}
+
+.button-class:hover {
+  background-color: #b58647;
+  color: white;
+}
+
+
+/* MERCI PAGE */
+.merci {
+  background-color: #0b3041;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+  
+}
+
+.merci-page-content {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+
+.grid-hover .image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.galerie-impression .image-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 10px;
+  display: block;
+  margin: auto;
+}
+
+
+
+
+
+.galerie-machines-matieres .card-hover {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.galerie-machines-matieres .image-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galerie-machines-matieres .image-wrapper img {
+  max-height: 80%;
+  max-width: 90%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.galerie-cartes .card {
+  height: 320px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.galerie-cartes .card img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+
+.card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 31, 47, 0.95);
+  color: #ebe0d6;
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 2;
+  max-height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-word;
+}
+
+
+.card:hover .overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.galerie-cartes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.card .overlay p {
+  margin: 6px 0;
+}
+
+.galerie-cartes .card-hover {
+  width: 320px;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galerie-cartes .card-hover .image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galerie-cartes .card-hover .image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+[data-page="carte-de-visite"] .overlay {
+  max-height: 100%;
+  overflow-y: auto; 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+[data-page="carte-de-visite"] .overlay p.description {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-size: 0.8rem;
+  text-align: center;
+  max-height: 100%;
+}
+
+
+@media (max-width: 768px) {
+ .title-block .logo-tesselia {
+  top: 5px;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+  .corner-logo {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  height: 40px;
+  z-index: 10;
+  }
+
+  .title-block h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .main-nav {
+    margin-top: 0.5rem;
+  }
+
+   .main-nav ul {
+    display: flex;
+    flex-direction: row;      
+    justify-content: center;  
+    gap: 1.5rem;             
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;         
+  }
+
+  .main-nav a {
+    padding: 0.4rem 0.6rem;
+    white-space: nowrap;
+  }
+}
+
+
+
+
+.cgu-page .page-title {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d5a55a;
+  line-height: 1.2;    
+}
+
+
+.confidentialite-page .page-title {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;        
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+
+
+@media (max-width: 1100px) {
+  .confidentialite-page .page-title { max-width: 24ch; }
+}
+@media (max-width: 700px) {
+  .confidentialite-page .page-title { max-width: 90%; }
+}
+
+
+/* Titres H1 spécifiques à la page Mentions légales */
+/* Uniformiser tous les H1 des pages légales */
+.mentions-page h1,
+.confidentialite-page h1,
+.cookies-page h1,
+.cgu-page h1 {
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 2rem;
+}

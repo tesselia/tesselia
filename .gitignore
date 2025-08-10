@@ -1,0 +1,27 @@
+# Node/Next
+node_modules/
+.next/
+out/
+.vercel/
+dist/
+build/
+
+# Logs & OS
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Env
+.env
+.env.*
+node_modules/
+.next/
+out/
+dist/
+build/
+.vercel/
+.env
+.env.*
+npm-debug.log*
+yarn-*.log*
