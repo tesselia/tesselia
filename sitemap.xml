@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Accueil -->
+  <url>
+    <loc>https://tesselia3d.fr/</loc>
+  </url>
+
+  <!-- Pages principales -->
+  <url>
+    <loc>https://tesselia3d.fr/boutique.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/cao.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/carte_de_visite.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/impression_3d.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/machines_et_matieres.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/materiaux_bio.html</loc>
+  </url>
+
+  <!-- Pages légales -->
+  <url>
+    <loc>https://tesselia3d.fr/mentions-legales.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/cgu.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/confidentialite.html</loc>
+  </url>
+
+  <!-- Pages secondaires -->
+  <url>
+    <loc>https://tesselia3d.fr/cookies.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/gestion-cookies.html</loc>
+  </url>
+  <url>
+    <loc>https://tesselia3d.fr/merci.html</loc>
+  </url>
+
+</urlset>
