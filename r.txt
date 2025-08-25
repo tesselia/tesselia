@@ -1,0 +1,9 @@
+Ce que j'ai fais : 
+- SIte en https
+- Génération du sitemap
+- Création du robots.txt
+- Ajout du domaine sur Google Search console
+- Demande indexation manuelle sur Google Search console
+- Google Analytics
+- Ajout des balises meta pour les pages principales (index.html, boutique.html, cao.html, carte_de_visite.html,
+impression_3d.html, machines_et_matieres.html, materiaux_bio.html)
